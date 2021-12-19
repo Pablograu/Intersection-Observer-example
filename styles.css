@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  background-color: #1d1e22;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: #fff;
+  border: 3px solid red;
+  height: 400px;
+  margin: 20px auto;
+  overflow: scroll;
+  transition: 0.25s;
+  width: 400px;
+}
+#root.large {
+  height: 600px;
+}
+#root p {
+  text-align: center;
+}
+
+#target {
+  margin: auto;
+  pointer-events: none;
+  transition: 0.25s;
+  width: 300px;
+}
+#target.small {
+  height: 260px;
+}
+
+#output,
+#ratioNum {
+  color: #fff;
+  margin: 20px auto;
+  width: 400px;
+}
+#output pre,
+#ratioNum pre {
+  display: inline;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.buffer {
+  height: 600px;
+}
